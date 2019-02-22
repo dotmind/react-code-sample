@@ -19,15 +19,13 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+p.link:hover {
+  cursor: pointer;
+  color: #26a69a;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#link-menu {
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
 }

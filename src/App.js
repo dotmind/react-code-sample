@@ -1,25 +1,38 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import components from './demo-components';
 import './App.css';
 
+const currentHash = (window.location.hash && window.location.hash.substr(1)) || '';
+
 class App extends Component {
+
+  _renderMenu = () => {
+    const links = components.map(c => c.hash);
+    const navigate = link => () => {
+      window.location.hash = link;
+      window.location.reload();
+    };
+
+    return links.map(link => (
+      <p
+        className={'link'}
+        onClick={navigate(link)} 
+        key={link}>
+        {link}
+      </p>
+    ));
+  }
+
+  _renderSubComponent = () => {
+    const component = components.find(c => c.hash === currentHash);      
+    return (component && component.render()) || this._renderMenu();
+  }
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <a href={'/'} id={'link-menu'}>Menu</a>
+        {this._renderSubComponent()}
       </div>
     );
   }
