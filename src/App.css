@@ -28,4 +28,7 @@ p.link:hover {
   position: absolute;
   left: 50px;
   bottom: 50px;
+  color: #26a69a;
+  text-decoration: none;
+  font-weight: bold;
 }

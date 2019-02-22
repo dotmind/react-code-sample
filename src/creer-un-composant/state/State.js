@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 
 class Sample extends Component {
 
@@ -16,9 +16,12 @@ class Sample extends Component {
   render() {
     console.count('render');
     return (
-      <button onClick={this._onClick}>
-        <span>Button</span>
-      </button>
+      <Fragment>
+        <button onClick={this._onClick}>
+          <span>Button</span>
+        </button>
+        <small>(Ouvrir la console)</small>
+      </Fragment>
     );
   }
 }
