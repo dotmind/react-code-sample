@@ -31,8 +31,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <a href={'/'} id={'link-menu'}>menu 🏃</a>
-        {this._renderSubComponent()}
+        <a href={'/'} id={'link-menu'}>menu <span role={'img'} aria-label={''}>🏃</span></a>
+        <div id={'demo-wrapper'}>
+          {this._renderSubComponent()}
+        </div>
       </div>
     );
   }
