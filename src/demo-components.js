@@ -16,6 +16,8 @@ import LogUpdate from './notions-avancees/hoc/LogUpdate';
 import LazySuspense from './notions-avancees/lazy/LazySuspense';
 import MemoStateLess from './notions-avancees/memo/MemoStateLess';
 
+import SimpleReduxApp from './redux/simple-demo/App';
+
 const creerUnComposant = [
   {
     hash: 'creer-un-composant/component',
@@ -81,9 +83,20 @@ const notionsAvancees = [
   },
 ];
 
+const redux = [
+  {
+    hash: '- - - -',
+  },
+  {
+    hash: 'redux/simple-app',
+    render: () => <SimpleReduxApp />,
+  },
+];
+
 const components = [
   ...creerUnComposant,
   ...notionsAvancees,
+  ...redux,
 ];
 
 export default components;
