@@ -12,6 +12,7 @@ import ReservedProps from './creer-un-composant/props/Reserved';
 import ComponentErrors from './creer-un-composant/errors/Errors';
 
 import RenderProps from './notions-avancees/props/RenderProps';
+import LogUpdate from './notions-avancees/hoc/LogUpdate';
 
 const creerUnComposant = [
   {
@@ -66,7 +67,7 @@ const notionsAvancees = [
   },
   {
     hash: 'notions-avancees/hoc',
-    render: () => <SimpleComponentClass />,
+    render: () => <LogUpdate />,
   },
 ];
 
