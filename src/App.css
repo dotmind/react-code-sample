@@ -28,6 +28,10 @@ p.link:hover {
   color: #26a69a;
 }
 
+span.emoji-big {
+  font-size: 48px;
+}
+
 #link-menu {
   position: absolute;
   left: 50px;

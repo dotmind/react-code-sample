@@ -11,6 +11,8 @@ import PropTypesDemo from './creer-un-composant/props/PropTypes';
 import ReservedProps from './creer-un-composant/props/Reserved';
 import ComponentErrors from './creer-un-composant/errors/Errors';
 
+import RenderProps from './notions-avancees/props/RenderProps';
+
 const creerUnComposant = [
   {
     hash: 'creer-un-composant/component',
@@ -60,7 +62,7 @@ const notionsAvancees = [
   },
   {
     hash: 'notions-avancees/render-prop',
-    render: () => <SimpleComponentClass />,
+    render: () => <RenderProps />,
   },
   {
     hash: 'notions-avancees/hoc',
