@@ -13,6 +13,7 @@ import ComponentErrors from './creer-un-composant/errors/Errors';
 
 import RenderProps from './notions-avancees/props/RenderProps';
 import LogUpdate from './notions-avancees/hoc/LogUpdate';
+import LazySuspense from './notions-avancees/lazy/LazySuspense';
 
 const creerUnComposant = [
   {
@@ -68,6 +69,10 @@ const notionsAvancees = [
   {
     hash: 'notions-avancees/hoc',
     render: () => <LogUpdate />,
+  },
+  {
+    hash: 'notions-avancees/lazy-suspense',
+    render: () => <LazySuspense />,
   },
 ];
 
