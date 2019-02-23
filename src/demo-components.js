@@ -7,6 +7,7 @@ import SimpleControlledComponent from './creer-un-composant/state/ControlledComp
 import ComponentUpdate from './creer-un-composant/class/ComponentUpdate';
 import ApplicationFeed from './creer-un-composant/application/Feed';
 import SimplePropsDemo from './creer-un-composant/props/Props';
+import PropTypesDemo from './creer-un-composant/props/PropTypes';
 
 const components = [
   {
@@ -36,6 +37,10 @@ const components = [
   {
     hash: 'creer-un-composant/props',
     render: () => <SimplePropsDemo />,
+  },
+  {
+    hash: 'creer-un-composant/prop-types',
+    render: () => <PropTypesDemo showTitle={true} />,
   },
 ];
 
