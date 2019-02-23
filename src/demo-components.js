@@ -17,6 +17,7 @@ import LazySuspense from './notions-avancees/lazy/LazySuspense';
 import MemoStateLess from './notions-avancees/memo/MemoStateLess';
 
 import SimpleReduxApp from './redux/simple-demo/App';
+import ReduxApp from './redux/application/App';
 
 const creerUnComposant = [
   {
@@ -90,6 +91,10 @@ const redux = [
   {
     hash: 'redux/simple-app',
     render: () => <SimpleReduxApp />,
+  },
+  {
+    hash: 'redux/app',
+    render: () => <ReduxApp />,
   },
 ];
 
