@@ -21,6 +21,7 @@ import ReduxApp from './redux/application/App';
 import ReduxCustomMiddleware from './redux/custom-middleware/App';
 import ReduxLogger from './redux/logger/App';
 import ReduxPersist from './redux/persist/App';
+import ReduxThunk from './redux/thunk/App';
 
 const creerUnComposant = [
   {
@@ -110,6 +111,10 @@ const redux = [
   {
     hash: 'redux/persist',
     render: () => <ReduxPersist />,
+  },
+  {
+    hash: 'redux/thunk',
+    render: () => <ReduxThunk />,
   },
 ];
 
