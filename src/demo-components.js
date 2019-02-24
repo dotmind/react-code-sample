@@ -18,6 +18,7 @@ import MemoStateLess from './notions-avancees/memo/MemoStateLess';
 
 import SimpleReduxApp from './redux/simple-demo/App';
 import ReduxApp from './redux/application/App';
+import ReduxCustomMiddleware from './redux/custom-middleware/App';
 import ReduxLogger from './redux/logger/App';
 
 const creerUnComposant = [
@@ -87,7 +88,7 @@ const notionsAvancees = [
 
 const redux = [
   {
-    hash: '- - - -',
+    hash: '- - - - -',
   },
   {
     hash: 'redux/simple-app',
@@ -96,6 +97,10 @@ const redux = [
   {
     hash: 'redux/app',
     render: () => <ReduxApp />,
+  },
+  {
+    hash: 'redux/custom-middleware',
+    render: () => <ReduxCustomMiddleware />,
   },
   {
     hash: 'redux/logger',
