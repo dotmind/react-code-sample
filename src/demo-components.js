@@ -20,6 +20,7 @@ import SimpleReduxApp from './redux/simple-demo/App';
 import ReduxApp from './redux/application/App';
 import ReduxCustomMiddleware from './redux/custom-middleware/App';
 import ReduxLogger from './redux/logger/App';
+import ReduxPersist from './redux/persist/App';
 
 const creerUnComposant = [
   {
@@ -105,6 +106,10 @@ const redux = [
   {
     hash: 'redux/logger',
     render: () => <ReduxLogger />,
+  },
+  {
+    hash: 'redux/persist',
+    render: () => <ReduxPersist />,
   },
 ];
 
