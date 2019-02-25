@@ -5,7 +5,7 @@ class Sample extends Component {
     value: '',
   };
 
-  _onChange = (event) => {
+  _onChange = (event) => {    
     this.setState({ value: event.target.value });
   }
 

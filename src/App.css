@@ -40,3 +40,14 @@ span.emoji-big {
   text-decoration: none;
   font-weight: bold;
 }
+
+.btn {
+  padding: 20px;
+  background-color:yellow;
+}
+
+.btn-primary {
+  padding: 20px;
+
+  background-color: cyan;
+}

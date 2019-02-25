@@ -10,6 +10,7 @@ import SimplePropsDemo from './creer-un-composant/props/Props';
 import PropTypesDemo from './creer-un-composant/props/PropTypes';
 import ReservedProps from './creer-un-composant/props/Reserved';
 import ComponentErrors from './creer-un-composant/errors/Errors';
+import ApplicationSplitComponentsFeed from './creer-un-composant/application/FeedSplitComponents';
 
 import RenderProps from './notions-avancees/props/RenderProps';
 import LogUpdate from './notions-avancees/hoc/LogUpdate';
@@ -64,6 +65,10 @@ const creerUnComposant = [
   {
     hash: 'creer-un-composant/errors',
     render: () => <ComponentErrors />,
+  },
+  {
+    hash: 'creer-un-composant/application-split-components-feed',
+    render: () => <ApplicationSplitComponentsFeed />,
   },
 ];
 
