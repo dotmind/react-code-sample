@@ -1,9 +1,9 @@
 # .mind
 
-*Install
+* Install
 `git clone ...`
 
 `npm i`
 
-*Run
+* Run
 `npm start`
