@@ -19,6 +19,7 @@ import MemoStateLess from './notions-avancees/memo/MemoStateLess';
 
 import SimpleReduxApp from './redux/simple-demo/App';
 import ReduxApp from './redux/application/App';
+import ReduxFeedApp from './redux/application-feed/App';
 import ReduxCustomMiddleware from './redux/custom-middleware/App';
 import ReduxLogger from './redux/logger/App';
 import ReduxPersist from './redux/persist/App';
@@ -105,6 +106,10 @@ const redux = [
   {
     hash: 'redux/app',
     render: () => <ReduxApp />,
+  },
+  {
+    hash: 'redux/app-feed',
+    render: () => <ReduxFeedApp />,
   },
   {
     hash: 'redux/custom-middleware',
